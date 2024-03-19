@@ -1,0 +1,201 @@
+body{
+    background-color: black;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    font-style: normal;
+}
+/*Header inside Page*/
+.headerContent{
+    width: 100%;
+    height: 99.5vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.364);
+    backdrop-filter: blur(50px);
+    position: absolute;
+    top: -100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;flex-direction: column;
+    border-bottom: 4px solid white;
+    overflow-x:hidden ;
+    z-index: 99;
+}
+.cancelbutton{
+    width: fit-content;
+    height: 0px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cancelimage{
+    margin-right: 20px;
+    margin-top: 20px;
+    transform: translateY(0px);
+}
+.cancelimage:hover{
+    cursor: pointer;
+}
+.menus{
+    font-size: 60px;
+    color: yellowgreen;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.mainmenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.menusdiv{
+    margin-right: 40px;
+    margin-left: 40px;
+    
+    text-align: start;
+}
+.menusdiv:hover{
+    background-color: rgb(28, 28, 28);
+    border-radius: 100px;
+    width: fit-content;
+    transition: 0.5s;
+}
+/*Header*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    z-index:100;
+}
+.bigger{
+    margin-left: 40px;
+    background-image: linear-gradient(to right,royalblue,purple);
+    border-radius: 40px;
+}
+.menubutton{
+    margin-right:40px;
+}
+/*Hamburger*/
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    transform: 0.2s;
+    position: relative;
+    
+  }
+  .hamburger .checkbox {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  .line {
+    transition: 0.5s;
+    stroke-width: 6px;
+    stroke: rgb(255, 255, 255);
+  }
+  .lineTop {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 25;
+  }
+  .lineBottom {
+    stroke-dasharray: 40 40;
+    stroke-dashoffset: 60;
+  }
+  .lineMid {
+    stroke-dasharray: 40 40;
+  }
+  .hamburger .checkbox:checked + svg .line {
+    stroke: purple;
+  }
+  .hamburger .checkbox:checked + svg .lineTop {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(45deg) translate(-7px, -5px);
+  }
+  .hamburger .checkbox:checked + svg .lineMid {
+    stroke-dashoffset: 40;
+  }
+  .hamburger .checkbox:checked + svg .lineBottom {
+    stroke-dashoffset: 0;
+    transform-origin: left;
+    transform: rotateZ(-45deg) translate(-5px, 5px);
+  }
+/*Hamburger*/
+/*Club Name*/
+.clubname{
+    font-size: 22px;
+    margin-left: 0px;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    margin: 3px;
+}
+/*page1*/
+.page1{
+    width: 100%;
+    height: 100vh;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 150px;
+    color: white;
+    font-weight: 800;
+    background-image: linear-gradient(to right ,#0177ae, #8300a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Jockey One';
+}
+/*Gradient Background*/
+.gradientpage{
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* .gradient1{
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border-radius: 50%; 
+    background-color: #0177ae66;
+    box-shadow: 0 0 900px 200px #0177ae45;
+} */
+.page1back,.page2back{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.page2{
+    height: 100vh;
+}
